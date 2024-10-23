@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta chartset="UTF - 8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <title>Request Blood</title>
+    <style>
+      *{
+        font-family:"poppins",sans-serif;
+        box-sizing:border-box;
+      }
+      body{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        background-image:url('blood8.jpg');
+        background-repeat: no-repeat;  
+        background-size: cover;
+      }
+      .wrapper{
+        width:35%;
+        height:450px;
+        padding:30px 40px;
+        background-color: white;
+        border-radius:5px;
+        box-shadow:0px 0px 10px 0px rgb(113, 99, 99);
+      }
+      .wrapper h3{
+        margin-left:29px;
+      }
+      .ne{
+        display:flex;
+        justify-content:space-around;
+        padding:20px 10px;
+        margin-top:-30px;
+      }
+      .wrapper h5{
+        margin-bottom:10px;
+      }
+      .ne input{
+        width:100%;
+        padding: 5px 7px;
+        margin-top:-50px;
+      }
+      .lc{
+        display:flex;
+        justify-content: space-around;
+        padding:0px 10px;
+        margin-top:-20px;
+      }
+      .lc input{
+        padding: 5px 7px;
+        margin-top:-50px;
+      }
+      .pb{
+        display:flex;
+        justify-content:space-around;
+        padding:20px 10px;
+        margin-top:-15px;
+      }
+      .pb input{
+        padding: 5px 7px;
+        margin-top:-50px;
+      }
+      .bd select{
+        padding: 5px 7px;
+        width:180px;
+        margin-top:-50px;
+      }
+      .gen{
+        display:flex;
+        justify-content: baseline;
+      }
+      .gen h5{
+        margin-left:29px;
+        margin-top:12px;
+      }
+      .g{
+        font-size:14px;
+        padding:0px 30px;
+        margin-top: 10px;
+      }
+      .g input{
+        margin-right:5px;
+      }
+      .send{
+        text-align: center;
+        padding:40px 30px;
+        margin-top:-20px;
+      }
+      .btn{
+        width:100%;
+        font-weight: bold;
+        padding: 6px 7px;
+        background-color: rgb(255, 28, 28);
+        color:white;
+        border:none;
+        border-radius:5px;
+        cursor:pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form>
+        <h3>Blood Request</h3>
+        <div class="ne">
+          <div>
+            <h5>Full Name</h5>
+            <input type="text" name="name" placeholder="Enter your name">
+          </div>
+          <div>
+            <h5>Email</h5>
+            <input type="email" placeholder="Enter your email">
+          </div>
+          </div>
+          <div class="lc">
+            <div>
+              <h5>Location</h5>
+            <input type="text" placeholder="Enter Location">
+            </div>
+            <div>
+              <h5>City</h5>
+              <input type="text" placeholder="Enter your city">
+            </div>
+          </div>
+          <div class="pb">
+            <div>
+              <h5>Phone number</h5>
+            <input type="number" placeholder="Enter Phone number">
+            </div>
+            <div class="bd">
+              <h5>Blood Group</h5>
+              <select name="blood group">
+                <option value="A+">A positive (A+)</option>
+                <option value="A-">A negative (A-)</option>
+                <option value="B+">B positive (B+)</option>
+                <option value="B-">B negative (B-)</option>
+                <option value="O+">O positive (O+)</option>
+                <option value="O-">O negative (O-)</option>
+                <option value="AB+">AB positive (AB+)</option>
+                <option value="AB-">AB negative (AB-)</option>
+              </select>
+            </div>
+          </div>
+          <div class="gen">
+            <h5>Gender</h5>
+          <div class="g">
+          <label>
+            <input type="radio" name="gender">Male
+          </label>
+        </div>
+          <div class="g">
+            <label>
+              <input type="radio" name="gender">Female
+            </label>
+          </div>
+          <div class="g">
+            <label>
+              <input type="radio" name="gender">Other
+            </label>
+          </div>
+        </div>
+        <div class="send">
+          <button class="btn">Send Request</button>
+        </div>
+      </div>
+      </form>
+    </div>
+  </body>
+</html>
